@@ -1,4 +1,8 @@
 body
 {
+color: white;
 background: deeppink;
+display: inline;
 }
+ul {background: black;}
+ul li{display: inline;}
