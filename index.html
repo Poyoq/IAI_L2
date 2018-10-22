@@ -16,15 +16,15 @@
         <legend>Uzupełnij dane:</legend>
         <div>
             <label for="name">Imie:</label>
-            <input id="name" name="name" placeholder="Podaj imie" required/>
+            <input id="name"  placeholder="Podaj imie" required/>
         </div>
         <div>
             <label for="surname">Nazwisko:</label>
-            <input id="surname" name="surname" placeholder="Podaj Naziwsko" required/>
+            <input id="surname"  placeholder="Podaj Naziwsko" required/>
         </div>
         <div>
             <label for="email">E-mail:</label>
-            <input id="email" name="email" placeholder="Podaj maila" required/>
+            <input id="email"  placeholder="Podaj maila" required/>
         </div>
         <div>
             <label>Płeć:</label>
@@ -46,14 +46,25 @@
             <textarea class="text" id="text" rows="4"></textarea>
         </div>
         <div>
-            <label>Wiek:</label>
-            <select class="from-control">
+            <label>Wybierz swój wiek:</label>
 
-                <option>Wybierz swój wiek</option>
+                <div><label>0-17 <input type="radio" value="0-17" name="wiek" /></label></div>
+                <div><label>18-35 <input type="radio" value="18-35" name="wiek" /></label></div>
+                <div><label>36-50 <input type="radio" value="36-50" name="wiek" /></label></div>
+                <div><label>51-65 <input type="radio" value="51-65" name="wiek" /></label></div>
+                <div><label>Więcej niż 65 <input type="radio" value=">65" name="wiek" /></label></div>
 
-            </select>
+
         </div>
-
+        <div class="col-auto my-1">
+                    <label class="mr-sm-3 sr-only" for="inlineFormCustomSelect">Preference</label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option value="1">Wolna/Kawaler</option>
+                        <option value="2">Zamężna/Żonaty</option>
+                        <option value="3">Wdowa/Wdowiec</option>
+                        <input type="submit" value="Prześlij formularz" />
+                    </select>
+        </div>
 
 
 
