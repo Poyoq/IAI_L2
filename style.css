@@ -1,0 +1,17 @@
+p.jeden{
+    color: blue;
+}
+ body{
+    background: white;
+ }
+ul li {
+    display: inline;
+    background: deeppink;
+    color: yellow;
+}
+ul {
+    text-align: center;
+    background: white;
+    color: red;
+}
+` `
